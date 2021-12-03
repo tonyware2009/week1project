@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Halo</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,84 +11,187 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
 
 </head>
+<style>
+  /* This is for wire framing to see our rows/columns */
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-<body>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
   <!-- Navbar with scroll too -->
-  <section>
-    <header>
-      <nav class="navbar sticky-top navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Spartan 117</a>
-        </div>
-      </nav>
-    </header>
-  </section>
-  <main>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <nav class="navbar sticky-top navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Spartan 117</a>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid con1  m-0">
     <!-- Add Card and text -->
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-">
 
+    <div class="row row1 spartan-card chiefy">
+      <div class="col-12 ">
+        <div class="card mx-5" style="width: 18rem; height: 25rem;">
+
+          <div class="card-body navbar spartan-card">
+            <h5 class="card-title">Spartan</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
+
     <!-- Add text to the left column add card to right column with text inside to spill out from bottom -->
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-        </div>
+    <div class="row row2">
+      <div class="col-md-6 p-5 text-center navbar">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus itaque, tempore pariatur assumenda quia
+          quibusdam cumque magnam possimus a eligendi. Eaque excepturi esse tempora facilis, numquam voluptate a qui!
+          Nulla.
+          Ut voluptatem odio praesentium veniam omnis culpa vero sunt. Doloremque rerum incidunt rem at, aliquam odit,
+          dolorum quos optio asperiores repellendus, accusamus ut debitis et tenetur sit eligendi aut laudantium?
+          Vero illum modi officia. Ipsa minus ab pariatur non repudiandae odit amet adipisci. Dolor exercitationem sunt
+          obcaecati, nemo nisi culpa pariatur doloremque repellendus, nesciunt consectetur labore eius illo provident
+          repudiandae!
+          Harum modi voluptatum nam corporis consectetur fuga alias quo rem sit. Nisi, voluptate obcaecati maxime error
+          delectus blanditiis corrupti doloribus debitis ad quasi alias similique voluptatibus laborum minus, ea
+          consequuntur?
+          Nobis sint ipsum vitae placeat aspernatur consequuntur quas nam eaque architecto? Sit placeat voluptatem
+          dolores voluptatibus sed, laudantium quo quas ea commodi dicta qui veritatis libero perspiciatis voluptates
+          illum porro!
+          Quidem a, assumenda rerum enim soluta sapiente voluptates aut esse possimus quas, quam vel praesentium dolorum
+          aliquid? Doloremque, nemo quia. Perspiciatis beatae quae officia dicta, quam corporis aperiam eum inventore.
+        </p>
       </div>
-    </section>
-    <section>
-      <!-- place holder image left column  text and icon with button on right column -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <!-- Add 3 cards one each column 1st with text.... middle card with 3 icons and text.... right card with text.... -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <!-- insert text only -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-">
+      <div class="col-md-6 navbar position-relative">
+        <div class="card position-absolute spill" style="width: 45rem; height: 20rem;">
 
+          <div class="card-body navbar ">
+            <h5 class="card-title">Spartan</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <footer>
-        <!-- Add text centered -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-">
+    </div>
+    <!-- place holder image left column  text and icon with button on right column -->
+    <div class="row row2 bg-dark">
+      <div class="col-md-3">
+        <img src="http://placehold.it/250x600" class="cat" alt="cat things">
+      </div>
+      <div class=" d-flex col-md-9  text-light align-items-center w-75">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut voluptates iusto necessitatibus cumque
+          exercitationem temporibus saepe et, minima repellendus, assumenda voluptatem veritatis sunt quisquam
+          doloremque rem similique dolor ab.
+          Quae rerum ipsa quidem illum consequatur praesentium, est ex repellat velit odit voluptatum atque enim
+          quibusdam voluptas libero quas aut? Mollitia corrupti dolorum ex iusto ipsam nihil velit quos sint.
+          Cumque explicabo fugiat nostrum, placeat, itaque aut unde expedita nemo voluptatibus perferendis incidunt et
+          corporis qui aspernatur sapiente illum id exercitationem cupiditate blanditiis nisi ut culpa totam
+          dignissimos. Doloribus, non!
+          Commodi consectetur laborum id nisi sunt? Placeat dolore natus ab eligendi veniam ratione mollitia fugit a.
+          Eos, animi facere ad placeat earum quam ipsa. Labore qui neque maiores vitae facilis?
+          Expedita laborum dignissimos sed suscipit quos officiis? Ipsum voluptas quas asperiores est voluptatibus
+          delectus suscipit, voluptatum, optio praesentium ipsam nulla fuga ea iure debitis perferendis. Libero
+          assumenda maxime debitis quas.
+          Deserunt debitis natus recusandae rerum laboriosam perspiciatis eos asperiores nisi tenetur itaque eligendi,
+          soluta, saepe reprehenderit. Reiciendis dolor alias modi autem, consequuntur eius dolorum voluptates ipsum
+          voluptatum quis? Tempore, asperiores?</p>
+      </div>
+    </div>
+    <!-- Add 3 cards one each column 1st with text.... middle card with 3 icons and text.... right card with text.... -->
+    <div class="row row1">
+      <div class="col-md-4 navbar p-5 ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestiae corporis eligendi amet mollitia,
+          esse quidem ex ullam nulla ipsam at, maiores corrupti modi suscipit pariatur? Accusamus praesentium rem
+          perspiciatis.
+          Doloribus molestias esse eaque nemo maxime natus enim magni amet aspernatur quibusdam? Consequuntur eveniet
+          consequatur, sit nobis ipsum consectetur at, molestiae ut ea dolor ad voluptates deserunt inventore possimus
+          magnam!
+          Id quae nam ipsum eveniet eos, corrupti natus vel perferendis fuga omnis odit asperiores mollitia placeat
+          repudiandae iusto voluptatibus dolorum voluptates maiores! Provident dicta quidem sint maxime officia cumque
+          quod!
+          Aliquid dolorum quidem suscipit esse delectus magni quibusdam est, quae debitis repellendus. Nihil
+          perspiciatis alias id debitis natus laborum at laboriosam enim, pariatur quaerat harum. Praesentium vel labore
+          numquam ab?</p>
+      </div>
+      <div class="col-md-4 navbar p-5"> <i class="mdi mdi-sword-cross mdi-48px mdi-spin"></i>
+        <i class="mdi mdi-sword-cross mdi-48px mdi-spin"></i><i class="mdi mdi-sword-cross mdi-48px mdi-spin"></i>
 
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-
-
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut adipisci minima
+        error!
+        Nulla
+        doloribus minima perspiciatis. Perspiciatis accusantium, velit, quis nemo cupiditate consectetur iure
+        blanditiis, praesentium necessitatibus ratione qui dolore!
+        Dignissimos tempore illo cum dolorem aliquid quisquam aut. Ullam, maiores impedit eveniet unde rem soluta. Odio
+        doloribus, accusamus atque animi excepturi, minima facilis eveniet soluta reiciendis, rem laboriosam? Eius,
+        consequatur.
+        Laudantium aliquam, non, facilis, nisi dicta quae dolore quasi sit assumenda exercitationem deleniti quidem nemo
+        vitae atque accusantium aliquid quos velit voluptatibus. Quibusdam harum soluta molestias delectus illum
+        aspernatur debitis.
+        Quisquam, suscipit, excepturi voluptates repellat nesciunt mollitia tenetur atque vitae, dicta facere libero
+        nemo dolor corporis ipsa. Nemo facere corrupti voluptatem labore, doloremque ea quibusdam voluptatibus ducimus
+        saepe numquam quis.
+      </div>
+      <div class="col-md-4 navbar p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut adipisci minima
+        error!
+        Nulla
+        doloribus minima perspiciatis. Perspiciatis accusantium, velit, quis nemo cupiditate consectetur iure
+        blanditiis, praesentium necessitatibus ratione qui dolore!
+        Dignissimos tempore illo cum dolorem aliquid quisquam aut. Ullam, maiores impedit eveniet unde rem soluta. Odio
+        doloribus, accusamus atque animi excepturi, minima facilis eveniet soluta reiciendis, rem laboriosam? Eius,
+        consequatur.
+        Laudantium aliquam, non, facilis, nisi dicta quae dolore quasi sit assumenda exercitationem deleniti quidem nemo
+        vitae atque accusantium aliquid quos velit voluptatibus. Quibusdam harum soluta molestias delectus illum
+        aspernatur debitis.
+        Quisquam, suscipit, excepturi voluptates repellat nesciunt mollitia tenetur atque vitae, dicta facere libero
+        nemo dolor corporis ipsa. Nemo facere corrupti voluptatem labore, doloremque ea quibusdam voluptatibus ducimus
+        saepe numquam quis.</div>
+    </div>
+    <!-- insert text only -->
+    <div class="row row4 navbar">
+      <div class="col-12 text-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut vitae laudantium animi voluptatem libero
+          ipsa quasi accusamus perferendis earum perspiciatis fuga deserunt, nisi, iure obcaecati dolore ratione,
+          asperiores quas!</p>
+      </div>
+    </div>
   </main>
+  <footer class="container-fluid footer1">
+    <!-- Add text centered -->
+
+    <div class="row row5">
+      <div class="col-12">
+
+      </div>
+    </div>
+
+  </footer>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

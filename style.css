@@ -1,0 +1,52 @@
+.navbar{
+  background-color: rgb(3, 83, 0);
+}
+a{
+  color: rgb(190, 158, 158);
+}
+.con1{
+  height: 235vh;
+}
+ 
+.row1{
+  height: 75vh;
+}
+.col1{
+  height: 30vh;
+  
+}
+
+.row2{
+height: 60vh;
+}
+
+.row4{
+  height: 25vh;
+}
+
+.row5{
+  height: 15vh;
+} 
+
+.chiefy{
+  background-image: url("https://img4.goodfon.com/wallpaper/nbig/8/46/master-chief-art-covenant-john-117-halo-bungie-spartan-ii-br.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.cat{
+ 
+  margin-left: 5vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+ .spartan-card{
+   align-items: center;
+  object-fit: fill;
+  
+} 
+.spill{
+  bottom: -99px;
+} 
