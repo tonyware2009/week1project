@@ -1,9 +1,7 @@
 .navbar{
   background-color: rgb(3, 83, 0);
 }
-a{
-  color: rgb(190, 158, 158);
-}
+
 .con1{
   height: 235vh;
 }
@@ -50,3 +48,15 @@ height: 60vh;
 .spill{
   bottom: -99px;
 } 
+
+@media (min-width: 768px) {
+  .hero-text {
+    display: block;
+  }
+}
+.font-family{
+ font-family: 'Halo', sans-serif;
+  /* font-family: 'Halo Outline', sans-serif; */
+  color: gold!important;
+  font-size: 16px;
+}
