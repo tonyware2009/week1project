@@ -8,6 +8,7 @@
  
 .row1{
   height: 75vh;
+  align-items: center;
 }
 .col1{
   height: 30vh;
