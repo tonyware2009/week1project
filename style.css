@@ -51,14 +51,26 @@ height: 60vh;
   bottom: -99px;
 } 
 
-@media (min-width: 768px) {
-  .hero-text {
-    display: block;
-  }
-}
 .font-family{
  font-family: 'Halo', sans-serif;
   /* font-family: 'Halo Outline', sans-serif; */
   color: gold!important;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .hero-text {
+    display: block;
+  }
+}
+  @media (min-width: 300px) {
+    .iframe {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    /* @media (min-width: 300px){
+      .chief-stats {
+        display: block;
+      }
+    } */
+
+  }
